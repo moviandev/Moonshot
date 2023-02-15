@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Image("Example")
+            .resizable()
             .frame(width: 300, height: 300)
-            .clipped()
+            
     }
 }
 
