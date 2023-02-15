@@ -14,6 +14,7 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: geo.size.width * 0.8)
+                .frame(width: geo.size.width, height: geo.size.height)
         }
     }
 }
