@@ -18,6 +18,7 @@ struct AstronautView: View {
                     .scaledToFit()
                 
                 Text(astronaut.description)
+                    .foregroundColor(.white)
                     .padding()
             }
         }
