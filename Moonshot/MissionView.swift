@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct DividerView: View {
-    var body: some View {
-        Rectangle()
-            .frame(height: 2)
-            .foregroundColor(.lightBackground)
-            .padding(.vertical)
-    }
-}
-
 struct MissionView: View {
     struct CrewMember {
         let role: String
