@@ -42,13 +42,25 @@ struct MissionView: View {
         .navigationBarTitleDisplayMode(.inline)
         .background(.darkBackground)
     }
+    
+    init(mission: Mission, astronauts: [String: Astronaut]) {
+        self.mission = mission
+        self.crew = mission.crew.map { member in
+            if let astronaut = astronauts[member.name] {
+                return CrewMember(role: member.role, astronaut: astronaut)
+            } else {
+                fatalError("Missing \(member.name)")
+            }
+        }
+    }
 }
 
 struct MissionView_Previews: PreviewProvider {
     static let missions: [Mission] = Bundle.main.decode("missions.json")
+    static let astrounaut: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     
     static var previews: some View {
-        MissionView(mission: missions[0])
+        MissionView(mission: missions[0], astronauts: astrounaut)
             .preferredColorScheme(.dark)
     }
 }
