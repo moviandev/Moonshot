@@ -26,6 +26,15 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
                     
+                    Text(mission.formattedLaunchDate)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .strokeBorder(.secondary, lineWidth: 0.5)
+                                .frame(width: geometry.size.width * 0.40)
+                        )
+                        .padding(.top)
+                    
                     VStack(alignment: .leading) {
                         DividerView()
                         
