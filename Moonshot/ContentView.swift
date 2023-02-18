@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingList = false
+    
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
     
@@ -56,6 +58,16 @@ struct ContentView: View {
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        showingList.toggle()
+                    } label: {
+                        Image(systemName: "list.bullet")
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
         }
     }
 }
