@@ -20,7 +20,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Group {
-                GridView(astronauts: astronauts, missions: missions)
+                if showingList {
+                    ListView(astronauts: astronauts, missions: missions)
+                } else {
+                    GridView(astronauts: astronauts, missions: missions)
+                }
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)
@@ -30,7 +34,7 @@ struct ContentView: View {
                     Button {
                         showingList.toggle()
                     } label: {
-                        Image(systemName: "list.bullet")
+                        Image(systemName: showingList ? "circle.grid.2x2" : "list.bullet")
                             .foregroundColor(.secondary)
                     }
                 }
