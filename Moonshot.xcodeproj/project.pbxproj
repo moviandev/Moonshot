@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB4D044029A06D5B0054B389 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D043F29A06D5B0054B389 /* CrewView.swift */; };
+		BB4D044229A074810054B389 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D044129A074810054B389 /* GridView.swift */; };
 		BB57AD9E299C6DFC00A25055 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57AD9D299C6DFC00A25055 /* MoonshotApp.swift */; };
 		BB57ADA0299C6DFC00A25055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57AD9F299C6DFC00A25055 /* ContentView.swift */; };
 		BB57ADA2299C6DFD00A25055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB57ADA1299C6DFD00A25055 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		BB4D043F29A06D5B0054B389 /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
+		BB4D044129A074810054B389 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		BB57AD9A299C6DFC00A25055 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB57AD9D299C6DFC00A25055 /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
 		BB57AD9F299C6DFC00A25055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				BB57AD9D299C6DFC00A25055 /* MoonshotApp.swift */,
 				BB57AD9F299C6DFC00A25055 /* ContentView.swift */,
+				BB4D044129A074810054B389 /* GridView.swift */,
 				BB4D043F29A06D5B0054B389 /* CrewView.swift */,
 				BBE2B74E299DC731008B3CFE /* Astronaut.swift */,
 				BB96E653299F15CD00579834 /* AstronautView.swift */,
@@ -172,6 +175,7 @@
 				BBC493C6299F0E4F007B5809 /* MissionView.swift in Sources */,
 				BB96E656299F17F400579834 /* DividerView.swift in Sources */,
 				BBE2B74F299DC731008B3CFE /* Astronaut.swift in Sources */,
+				BB4D044229A074810054B389 /* GridView.swift in Sources */,
 				BB96E654299F15CD00579834 /* AstronautView.swift in Sources */,
 				BBE2B755299DD105008B3CFE /* Color-Theme.swift in Sources */,
 				BB4D044029A06D5B0054B389 /* CrewView.swift in Sources */,
